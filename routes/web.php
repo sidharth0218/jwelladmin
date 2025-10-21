@@ -17,7 +17,9 @@ use App\Http\Controllers\Admin\AdminController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::name('admin')->group(function () {
 Route::get('/dashboard',[AdminController::class,'dashboard'])->name('admin.dashboard');
 Route::get('/register',[AdminController::class,'register'])->name('admin.register');
 Route::get('/login',[AdminController::class,'login'])->name('admin.login');
 Route::post('/logout',[AdminController::class,'logout'])->name('admin.logout');
+});
