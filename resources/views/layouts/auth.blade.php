@@ -9,12 +9,8 @@
     <div class="loader-fill"></div>
   </div>
 </div>
-<!-- [ Pre-loader ] End -->
-@include('layouts.sidebar')
-@yield('dashboard')
-@yield('content')
-@include('layouts.footer')
-@stack('scripts')
+@yield('login')    
+@yield('register')
 </body>
 <!-- [Body] end -->
 

@@ -20,9 +20,9 @@
           <i class="ti ti-dashboard"></i>
         </li>
         <li class="pc-item">
-          <a href="" class="pc-link">
+          <a href="{{route('admin.users')}}" class="pc-link">
             <span class="pc-micon"><i class="ti ti-typography"></i></span>
-            <span class="pc-mtext">Typography</span>
+            <span class="pc-mtext">User Management</span>
           </a>
         </li>
         <li class="pc-item">
@@ -101,7 +101,7 @@
           </a>
         </li>
       </ul>
-      <div class="card text-center">
+      {{-- <div class="card text-center">
         <div class="card-body">
           <img src="{{asset('src/assets/images/img-navbar-card.png')}}" alt="images" class="img-fluid mb-2">
           <h5>Upgrade To Pro</h5>
@@ -109,7 +109,7 @@
           <a href="https://codedthemes.com/item/berry-bootstrap-5-admin-template/" target="_blank"
           class="btn btn-success">Buy Now</a>
         </div>
-      </div>
+      </div> --}}
     </div>
   </div>
 </nav>
@@ -313,7 +313,7 @@
               
                 
                 @csrf
-                <input value="20"  hidden name="user_id">
+                <input value="1"  hidden name="admin">
                 <button type="submit" class="btn btn-danger">Logout</button>
               
             </a>

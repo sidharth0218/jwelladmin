@@ -24,6 +24,9 @@
 <!-- [Template CSS Files] -->
 <link rel="stylesheet" href="{{asset('src/assets/css/style.css')}}" id="main-style-link" >
 <link rel="stylesheet" href="{{asset('src/assets/css/style-preset.css')}}" >
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 </head>
 <!-- [Head] end -->
